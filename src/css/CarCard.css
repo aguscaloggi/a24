@@ -1,0 +1,237 @@
+.car-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 315px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 90%;
+}
+
+.car-card:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}   
+
+.card-divider {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-mainphoto {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    height: auto;
+}
+
+.car-mainphoto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.car-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.fav-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.material-icons {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1;
+    display: block;
+}
+
+.fav-btn:hover .material-icons {
+    transition: all 0.2s ease;
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+.car-info {
+    padding: 5px 10px 10px 10px;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.condition-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.condition-badge {
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.pricing {
+    text-align: right;
+}
+
+.original-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 5px 0 0;
+    color: var(--color-primary);
+}
+
+.car-title {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+    color: #333;
+}
+
+.home-year-mileage {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.separator {
+    color: #666;
+    font-weight: 400;
+}
+
+.details-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: #666;
+}
+
+.rating-stars .material-symbols-outlined.filled {
+    font-variation-settings: 
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: var(--color-primary) !important; /* Forzar color */
+}
+
+.seller-name {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.agency-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.rating-number {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.rating-stars .material-symbols-outlined {
+    color: var(--color-primary);
+    font-size: 18px;
+}
+
+.rating-text {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.reviews-count {
+    font-size: 14px;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.location {
+    order: 1;
+}
+
+.material-symbols-outlined {
+    order: 2;
+    font-size: 18px;
+}
+
+
+.availability-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.availability-btn:hover {
+    background: var(--color-primary-hover);
+    transition: 0.15s ease;
+}

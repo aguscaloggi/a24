@@ -1,0 +1,13 @@
+:root {
+    /*Primaries*/
+    --color-primary: #003366;
+    --color-text-primary: #1C1C1C;
+    --color-primary-hover: #336699;
+    /*Secondaries*/
+    /*Neutrals*/
+    --color-white: #F5F5F5;
+    /*States*/
+    --color-success: #10b981;
+    --color-error: #ef4444; 
+    --color-warning: #f59e0b; 
+}

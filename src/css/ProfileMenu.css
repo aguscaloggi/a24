@@ -1,0 +1,150 @@
+/* ProfileMenu.css */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: calc(100% + 8px); /* Separación de 8px del botón */
+    background: #f5f5f5; /* Color gris claro */
+    border-radius: 25px; /* Mismo border-radius que el botón */
+    width: 100%;
+    min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 1000;
+    padding: 8px 0;
+    font-weight: 400;
+  }
+  
+  .profile-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    color: #333; /* Color de texto oscuro */
+    text-decoration: none;
+    background: transparent !important;
+    border: none;
+    width: auto;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    margin: 0 8px;
+    border-radius: 20px; /* Bordes redondeados para los items */
+  }
+  
+  .dropdown-item:hover {
+    color: var(--color-primary) !important;
+  }
+  
+  /* Modal de confirmación */
+  .confirmation-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
+    max-width: 400px;
+    width: 90%;
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .confirmation-modal h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2rem;
+    color: var(--color-text-primary);
+    text-align: left; /* Texto alineado a la izquierda */
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+  }
+  
+  .modal-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end; /* Botones a la derecha */
+    width: 100%;
+  }
+  
+  .modal-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit; /* Hereda la fuente del proyecto */
+    font-size: 1rem;
+    font-weight: 400; /* Peso medio (ajustar según necesidad) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .modal-button.confirm {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .modal-button.confirm:hover {
+    background: var(--color-primary-hover);
+  }
+  
+  .modal-button.cancel {
+    background: white;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    transition: all 0.2s ease;
+  }
+  
+  .modal-button.cancel:hover {
+    background: #f5f5f5;
+    border-color: var(--color-primary-hover);
+    color: var(--color-primary-hover);
+  }
+  
+  @media (max-width: 768px) {
+    .profile-dropdown {
+        position: static;
+        box-shadow: none;
+        background: #f5f5f5;
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 0.5rem;
+      }
+      
+      .dropdown-item {
+        text-align: center;
+        margin: 0;
+      }
+
+      .modal-buttons {
+        flex-direction: column;
+      }
+      
+      .modal-button {
+        width: 100%;
+      }
+  }
+
+  
